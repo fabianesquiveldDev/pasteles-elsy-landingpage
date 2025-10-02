@@ -5,12 +5,15 @@ const Galeria: React.FC = () => {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   
   const imagenes = [
-    "/img/pasteles/1.png",
+    "/img/pasteles/7.png",
     "/img/pasteles/2.png",
     "/img/pasteles/3.png",
     "/img/pasteles/4.png",
     "/img/pasteles/5.png",
     "/img/pasteles/6.png",
+    "/img/pasteles/8.png",
+    "/img/pasteles/9.png",
+    "/img/pasteles/10.png",
   ];
 
   return (
