@@ -157,7 +157,7 @@ const Galeria: React.FC = () => {
           </div>
         )}
 
-        <style jsx>{`
+        <style >{`
           @keyframes fadeIn {
             from {
               opacity: 0;
