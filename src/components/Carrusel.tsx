@@ -11,22 +11,22 @@ interface Cake {
 
 const cakes: Cake[] = [
   {
-    image: "./img/pasteles/1.png",
+    image: "/img/pasteles/1.png",
     name: "Pastel de Chocolate",
     description: "Delicioso pastel de chocolate con ganache y decoraciones elegantes"
   },
   {
-    image: "./img/pasteles/2.png",
+    image: "/img/pasteles/2.png",
     name: "Pastel de Vainilla",
     description: "Suave pastel de vainilla con crema de mantequilla y fresas frescas"
   },
   {
-    image: "./img/pasteles/3.png",
+    image: "/img/pasteles/3.png",
     name: "Pastel Red Velvet",
     description: "Clásico red velvet con queso crema y un toque de elegancia"
   },
   {
-    image: "./img/pasteles/4.png",
+    image: "/img/pasteles/4.png",
     name: "Pastel de Frutas",
     description: "Pastel ligero decorado con frutas frescas de temporada"
   },

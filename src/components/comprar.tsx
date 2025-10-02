@@ -70,7 +70,7 @@ const Comprar: React.FC = () => {
                 <div className="absolute inset-0 bg-black/5 rounded-[2rem] blur-2xl transform scale-110 group-hover:scale-125 transition-transform duration-700"></div>
                 <div className="relative bg-white/95 backdrop-blur-sm rounded-[2rem] p-8 shadow-[0_20px_70px_rgba(0,0,0,0.1)] transform group-hover:-translate-y-2 transition-all duration-700 border border-[#D9B4BB]/20">
                   <img 
-                    src="./img/pasteles/5.png" 
+                    src="/img/pasteles/5.png" 
                     alt="Delicioso pastel artesanal" 
                     loading="lazy" 
                     className="w-full h-auto rounded-2xl"

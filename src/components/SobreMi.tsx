@@ -30,7 +30,7 @@ const SobreMi: React.FC = () => {
                 <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl p-4 shadow-[0_25px_80px_rgba(0,0,0,0.15)] border border-[#D9B4BB]/20 transform group-hover:-translate-y-2 transition-all duration-700">
                   <img 
                     className="w-full h-auto rounded-2xl shadow-lg" 
-                    src="./img/imagenChef.jpg" 
+                    src="/img/imagenChef.jpg" 
                     alt="Chef Esly - Pastelera artesanal"
                     loading="lazy"
                   />
