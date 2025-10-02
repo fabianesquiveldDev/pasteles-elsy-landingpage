@@ -157,59 +157,59 @@ const ModalPedir: React.FC<ModalPedirProps> = ({ isOpen, onClose }) => {
         />
         
         {/* Modal */}
-        <div className="flex min-h-screen items-center justify-center p-6">
-          <div className="relative w-full max-w-3xl bg-white/95 backdrop-blur-md rounded-2xl shadow-[0_25px_80px_rgba(0,0,0,0.15)] transform transition-all duration-500 border border-[#D9B4BB]/20">
+        <div className="flex min-h-screen items-center justify-center p-4 sm:p-6">
+          <div className="relative w-full max-w-3xl bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl shadow-[0_25px_80px_rgba(0,0,0,0.15)] transform transition-all duration-500 border border-[#D9B4BB]/20">
             
             {/* Header elegante */}
-            <div className="relative overflow-hidden rounded-t-2xl">
+            <div className="relative overflow-hidden rounded-t-xl sm:rounded-t-2xl">
               <div className="absolute inset-0 bg-gradient-to-r from-black via-[#73020C] to-[#A67C58]"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>
-              <div className="relative flex items-center justify-between p-8 text-white">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <ShoppingBag className="w-6 h-6" strokeWidth={1.5} />
+              <div className="relative flex items-center justify-between p-4 sm:p-6 lg:p-8 text-white">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <ShoppingBag className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.5} />
                   </div>
                   <div>
                     <h2 
-                      className="text-2xl md:text-3xl font-light tracking-wide"
+                      className="text-xl sm:text-2xl lg:text-3xl font-light tracking-wide"
                       style={{ fontFamily: 'Playfair Display, serif' }}
                     >
                       Realizar Pedido
                     </h2>
-                    <p className="text-white/80 text-sm font-light mt-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                    <p className="text-white/80 text-xs sm:text-sm font-light mt-1 hidden sm:block" style={{ fontFamily: 'Inter, sans-serif' }}>
                       Crea tu experiencia personalizada
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={onClose}
-                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-200 flex items-center justify-center backdrop-blur-sm group"
+                  className="w-9 h-9 sm:w-10 sm:h-10 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-200 flex items-center justify-center backdrop-blur-sm group"
                   type="button"
                 >
-                  <X className="w-5 h-5 group-hover:rotate-90 transition-transform duration-200" strokeWidth={1.5} />
+                  <X className="w-5 h-5" strokeWidth={1.5} />
                 </button>
               </div>
             </div>
 
             {/* Body con form */}
             <form onSubmit={handleSubmit}>
-              <div className="p-8 max-h-[70vh] overflow-y-auto custom-scrollbar">
-                <div className="space-y-8">
+              <div className="p-4 sm:p-6 lg:p-8 max-h-[60vh] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
+                <div className="space-y-6 sm:space-y-8">
                   
                   {/* Información Personal */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-[#D9B4BB]/5 rounded-xl"></div>
-                    <div className="relative bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-[#D9B4BB]/20">
+                    <div className="relative bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-[#D9B4BB]/20">
                       <h3 
-                        className="text-lg font-medium text-black mb-6 flex items-center"
+                        className="text-base sm:text-lg font-medium text-black mb-4 sm:mb-6 flex items-center"
                         style={{ fontFamily: 'Inter, sans-serif' }}
                       >
-                        <div className="w-8 h-8 bg-[#73020C]/10 rounded-full flex items-center justify-center mr-3">
-                          <User className="w-4 h-4 text-[#73020C]" strokeWidth={1.5} />
+                        <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#73020C]/10 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                          <User className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#73020C]" strokeWidth={1.5} />
                         </div>
                         Información Personal
                       </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <label className="block text-sm font-medium text-black/70 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                             Nombre completo *
@@ -248,17 +248,17 @@ const ModalPedir: React.FC<ModalPedirProps> = ({ isOpen, onClose }) => {
                   {/* Detalles del Pastel */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-[#A67C58]/5 rounded-xl"></div>
-                    <div className="relative bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-[#A67C58]/20">
+                    <div className="relative bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-[#A67C58]/20">
                       <h3 
-                        className="text-lg font-medium text-black mb-6 flex items-center"
+                        className="text-base sm:text-lg font-medium text-black mb-4 sm:mb-6 flex items-center"
                         style={{ fontFamily: 'Inter, sans-serif' }}
                       >
-                        <div className="w-8 h-8 bg-[#A67C58]/10 rounded-full flex items-center justify-center mr-3">
-                          <Cake className="w-4 h-4 text-[#A67C58]" strokeWidth={1.5} />
+                        <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#A67C58]/10 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                          <Cake className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#A67C58]" strokeWidth={1.5} />
                         </div>
                         Detalles del Pastel
                       </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <label className="block text-sm font-medium text-black/70 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                             Tipo de pastel *
@@ -336,17 +336,17 @@ const ModalPedir: React.FC<ModalPedirProps> = ({ isOpen, onClose }) => {
                   {/* Entrega */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-[#BF8494]/5 rounded-xl"></div>
-                    <div className="relative bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-[#BF8494]/20">
+                    <div className="relative bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-[#BF8494]/20">
                       <h3 
-                        className="text-lg font-medium text-black mb-6 flex items-center"
+                        className="text-base sm:text-lg font-medium text-black mb-4 sm:mb-6 flex items-center"
                         style={{ fontFamily: 'Inter, sans-serif' }}
                       >
-                        <div className="w-8 h-8 bg-[#BF8494]/10 rounded-full flex items-center justify-center mr-3">
-                          <Calendar className="w-4 h-4 text-[#BF8494]" strokeWidth={1.5} />
+                        <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#BF8494]/10 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                          <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#BF8494]" strokeWidth={1.5} />
                         </div>
                         Fecha y Hora de Entrega
                       </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <label className="block text-sm font-medium text-black/70 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                             Fecha de entrega *
@@ -383,17 +383,17 @@ const ModalPedir: React.FC<ModalPedirProps> = ({ isOpen, onClose }) => {
                   {/* Personalización */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-[#73020C]/5 rounded-xl"></div>
-                    <div className="relative bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-[#73020C]/20">
+                    <div className="relative bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-[#73020C]/20">
                       <h3 
-                        className="text-lg font-medium text-black mb-6 flex items-center"
+                        className="text-base sm:text-lg font-medium text-black mb-4 sm:mb-6 flex items-center"
                         style={{ fontFamily: 'Inter, sans-serif' }}
                       >
-                        <div className="w-8 h-8 bg-[#73020C]/10 rounded-full flex items-center justify-center mr-3">
-                          <Palette className="w-4 h-4 text-[#73020C]" strokeWidth={1.5} />
+                        <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#73020C]/10 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                          <Palette className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#73020C]" strokeWidth={1.5} />
                         </div>
                         Personalización
                       </h3>
-                      <div className="space-y-6">
+                      <div className="space-y-4 sm:space-y-6">
                         <div>
                           <label className="block text-sm font-medium text-black/70 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                             Decoración especial
@@ -444,20 +444,20 @@ const ModalPedir: React.FC<ModalPedirProps> = ({ isOpen, onClose }) => {
               </div>
 
               {/* Footer elegante */}
-              <div className="relative overflow-hidden rounded-b-2xl">
+              <div className="relative overflow-hidden rounded-b-xl sm:rounded-b-2xl">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D9B4BB]/10 to-[#BF8494]/10"></div>
-                <div className="relative flex items-center justify-end space-x-4 p-8 border-t border-[#D9B4BB]/20">
+                <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center justify-end space-y-3 sm:space-y-0 sm:space-x-4 p-4 sm:p-6 lg:p-8 border-t border-[#D9B4BB]/20">
                   <button
                     type="button"
                     onClick={onClose}
-                    className="px-6 py-3 text-black/60 bg-white/80 rounded-lg hover:bg-white hover:text-black transition-all duration-200 font-medium border border-[#D9B4BB]/20 backdrop-blur-sm"
+                    className="w-full sm:w-auto px-6 py-3 text-black/60 bg-white/80 rounded-lg hover:bg-white hover:text-black transition-all duration-200 font-medium border border-[#D9B4BB]/20 backdrop-blur-sm"
                     style={{ fontFamily: 'Inter, sans-serif' }}
                   >
                     Cancelar
                   </button>
                   <button
                     type="submit"
-                    className="group relative inline-flex items-center gap-3 px-8 py-3 bg-black text-white rounded-lg font-medium shadow-[0_10px_40px_rgba(0,0,0,0.2)] transform hover:-translate-y-0.5 hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] active:translate-y-0 transition-all duration-300 overflow-hidden"
+                    className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 px-8 py-3 bg-black text-white rounded-lg font-medium shadow-[0_10px_40px_rgba(0,0,0,0.2)] transform hover:-translate-y-0.5 hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] active:translate-y-0 transition-all duration-300 overflow-hidden"
                     style={{ fontFamily: 'Inter, sans-serif' }}
                   >
                     {/* Efecto de brillo */}
